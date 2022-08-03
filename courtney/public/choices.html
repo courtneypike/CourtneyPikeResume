@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>My website</title>
+</head>
+<body>
+    <menu> <li><a href="biography.html">biography</a></li> 
+        <li><a href="choices.php">choices</a></li> 
+        <li><a href="resume.html">resume</a></li> 
+        <li><a href="piano.html">piano</a></li> 
+        <li><a href="index.html">my cat</a></li>
+     </menu> 
+    <h1>Form to my database</h1>
+    <form name=”form1.php″ method=”post” action="form.php"> 
+        <section> 
+        <h3>Please fill out the following information</h3>
+        <!-- I added in alerts to the dom and to the page. -->
+        <label>Please enter your first name:</label>
+        <input type="text" id="firstName" name = "firstName" minlength="3" required  oninvalid="this.setCustomValidity('First Name is too short. Minimum of 3 characters. Please try again')"
+        oninput="this.setCustomValidity('')"><br>
+        <label>Please enter your last name:</label>
+        <input type="text" id="lastName" name = "lastName" minlength="3" required oninvalid="this.setCustomValidity('Last Name is too short. Minimum of 3 characters. Please try again')"
+        oninput="this.setCustomValidity('')"><br>
+        </section>
+        <section>
+            <h3>Please select what instruments you have played</h3>        
+    
+            <input type="checkbox" id="piano" value="piano" name="instrument" >
+            <label for="piano">Piano</label><br>
+            <input type="checkbox" id="Guitar" value="Guitar" name="instrument">
+            <label for="Guitar">Guitar</label><br>
+            <input type="checkbox" id="Bass" value="Bass" name="instrument">
+            <label for="Bass">Bass</label><br>
+            <input type="checkbox" id="Violin" value="Violin" name="instrument">
+            <label for="Violin">Violin</label><br>
+            </section>
+            
+        <section>
+        <h3>Please select your favorite food</h3>
+        <input type="radio" id="Pasta" value="Pasta" name="food">
+        <label for="green">Pasta</label><br>
+        <input type="radio" id="Tacos" value="Tacos" name="food">
+        <label for="orange">Tacos</label><br>
+        <input type="radio" id="Dumplings" value="Dumplings" name="food">
+        <label for="yellow">Dumplings</label><br>
+        <input type="radio" id="Croissant" value="Croissant" name="food">
+        <label for="pink">Croissant</label><br>
+        </section>
+        <br>
+        <input id ="submit" type="submit" value="Submit">
+    </form>
+
+<script>
+    function validateInput(){
+        let firstNameInput = document.getElementById("firstName").value;
+        let lastNameInput = document.getElementById("lastName").value;        
+        if (testInputForAlphaCharacters(firstNameInput) === false) {
+            alert("First Name contains other values besides Alpha characters. Please try again");
+            return false
+        }
+        
+        if (lastNameInput.length < 3) {
+            alert("Last Name is too short. Minimum of 3 characters");
+            return false
+        }  
+        if (testInputForAlphaCharacters(lastNameInput) === false) {
+            alert("Last Name contains other values besides Alpha characters. Please try again");
+            return false
+        }
+    }
+
+function testInputForAlphaCharacters(input){
+    let validLetters = new RegExp('^[A-Za-z]+$')
+    return validLetters.test(input)
+} 
+
+</script>
+</body>
+</html>
