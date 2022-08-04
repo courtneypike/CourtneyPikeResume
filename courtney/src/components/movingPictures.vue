@@ -1,9 +1,11 @@
 <template>
-      <menu> <li><a href="biography.html">biography</a></li> 
-        <li><a href="choices.php">choices</a></li> 
+  <menu> 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biography.html">biography</a></li> 
+        <li><a href="choices.html">choices</a></li> 
         <li><a href="resume.html">resume</a></li> 
         <li><a href="piano.html">piano</a></li> 
-        <li><a href="index.html">my cat</a></li>
+        <li><a href="pictures.html">my cat</a></li>
      </menu> 
   <h2>Hover over "my cat" to see more pictures of my cat</h2>
   <section class="movingPictures">

@@ -1,0 +1,33 @@
+<template>
+  <div id="app">
+    <myBiography />
+  </div>
+</template>
+
+<script>
+import myBiography from "./components/myBiography.vue";
+export default {
+  name: "app",
+  components: {
+    myBiography
+  }
+},
+  data () {
+    return {
+    };
+  },
+}
+</script>
+
+<style>
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+body {
+  margin: 0px;
+}
+</style>

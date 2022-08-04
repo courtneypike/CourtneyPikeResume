@@ -1,19 +1,17 @@
 <template>
-  <movingPictures :imageList ="imageData.imageList"/>
+  <homePage/>
 </template>
 
 <script>
-import imageData from './data/imgList.js';
-import movingPictures from './components/movingPictures.vue'
+import homePage from '../../components/homePage.vue'
 
 export default {
   name: 'App',
   components: {
-    movingPictures,
+    homePage,
   },
   data () {
     return {
-      imageData,
     };
   },
 }
