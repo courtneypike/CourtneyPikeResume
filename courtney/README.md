@@ -1,24 +1,2 @@
-# courtney
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# CS 601 Term Project
+The goal of this project is to showcase my interest and to build a simple, clean, and easy-to follow portfiolio of my web development skills.
