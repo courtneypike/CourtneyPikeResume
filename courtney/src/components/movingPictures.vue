@@ -1,20 +1,21 @@
 <template>
-  <menu> 
-        <li><a href="index.html">Home</a></li>
-        <li><a href="biography.html">biography</a></li> 
-        <li><a href="choices.html">choices</a></li> 
-        <li><a href="resume.html">resume</a></li> 
-        <li><a href="piano.html">piano</a></li> 
-        <li><a href="pictures.html">my cat</a></li>
-     </menu> 
-  <h2>Hover over "my cat" to see more pictures of my cat</h2>
+     <nav class = "navigation"> 
+        <a href="index.html">Home</a>
+        <a href="biography.html">biography</a>
+        <a href="choices.html">choices</a>
+        <a href="resume.html">resume</a>
+        <a href="piano.html">piano</a>
+        <a href="pictures.html">my cat</a>
+             <br><br>
+
+     </nav> 
+     <body>
+  <h2>Hover over this picture to see more pictures</h2>
   <section class="movingPictures">
   <img :src="selectedImg.src" @mouseleave="pictureHoverFunction()" @mouseover="pictureHoverFunction()" >
   </section>
-  <h2>My cat</h2>
-  <section class="movingPictures">
-  <img :src="require ('../data/images_videos/mochi.jpg')" @mouseleave="pictureHoverFunction()" @mouseover="pictureHoverFunction()" >
-  </section>
+
+  </body>
   </template>
 
 <script>
@@ -54,6 +55,6 @@ function decreaseIndex(index, length){
 
 <style scoped> 
 img {
-  height: 300px;
+  height: 500px;
 }
 </style>

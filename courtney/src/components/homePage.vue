@@ -1,13 +1,17 @@
 <template>
-   <menu> 
-        <li><a href="index.html">Home</a></li>
-        <li><a href="biography.html">biography</a></li> 
-        <li><a href="choices.html">choices</a></li> 
-        <li><a href="resume.html">resume</a></li> 
-        <li><a href="piano.html">piano</a></li> 
-        <li><a href="pictures.html">my cat</a></li>
-     </menu> 
-  <div>
+<container>
+     <nav class = "navigation"> 
+        <a href="index.html">Home</a>
+        <a href="biography.html">biography</a>
+        <a href="choices.html">choices</a>
+        <a href="resume.html">resume</a>
+        <a href="piano.html">piano</a>
+        <a href="pictures.html">my cat</a>
+     </nav> 
+          <br><br>
+</container>
+<body>
+<h1>Slideshow of Pictures I Have Taken or Pictures of Me</h1>
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i">
         <img :src="currentImg" />
@@ -15,7 +19,7 @@
     </transition-group>
     <a class="prev" @click="prev" href="#">&#10094; Previous</a>
     <a class="next" @click="next" href="#">&#10095; Next</a>
-  </div>
+</body>
 </template>
 
 <script>
@@ -80,8 +84,8 @@ export default {
 }
 
 img {
-  height:100%;
-  width:100%;
+  height:50%;
+  width:100%
 }
 
 .prev, .next {
@@ -92,9 +96,9 @@ img {
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.8s ease;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 10px 10px 0;
   text-decoration: none;
   user-select: none;
 }

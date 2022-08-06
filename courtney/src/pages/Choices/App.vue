@@ -1,17 +1,15 @@
 <template>
-  <div id="app">
-    <dataChoices />
-  </div>
+  <dataChoices/>
 </template>
 
 <script>
-import dataChoices from "./components/dataChoices.vue";
+import dataChoices from '../../components/dataChoices.vue'
+
 export default {
-  name: "app",
+  name: 'App',
   components: {
-    dataChoices
-  }
-},
+    dataChoices,
+  },
   data () {
     return {
     };
@@ -21,13 +19,11 @@ export default {
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
-body {
-  margin: 0px;
+  margin-top: 60px;
 }
 </style>

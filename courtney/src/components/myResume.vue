@@ -1,14 +1,56 @@
 <template>
-  <menu> 
-        <li><a href="index.html">Home</a></li>
-        <li><a href="biography.html">biography</a></li> 
-        <li><a href="choices.html">choices</a></li> 
-        <li><a href="resume.html">resume</a></li> 
-        <li><a href="piano.html">piano</a></li> 
-        <li><a href="pictures.html">my cat</a></li>
-     </menu> 
-    <h1>Resume</h1>
-    <h2>Education</h2>
+     <nav class = "navigation"> 
+        <a href="index.html">Home</a>
+        <a href="biography.html">biography</a>
+        <a href="choices.html">choices</a>
+        <a href="resume.html">resume</a>
+        <a href="piano.html">piano</a>
+        <a href="pictures.html">my cat</a>
+             <br><br>
+     </nav>  
+     <body>
+     <div class ="float-container">
+     <aside>
+        <div class = "float-child contact">
+            <h3>Contact</h3>
+            <ul>
+                pikecourtneyj@gmail.com
+            </ul>
+            <ul>
+                617-955-4176
+            </ul>
+            <ul>
+                github.com/courtneypike
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+          <div>
+            <h3>Technologies</h3>
+            <ul>
+                JavaScript (AJAX, Puppeteer, Node.JS)
+            </ul>
+            <ul>
+                PostGresSQL
+            </ul>
+            <ul>
+                MSSQL
+            </ul>
+            <ul>
+                HTML5/CSS
+            </ul>
+              <ul>
+                Sequelize 
+            </ul>
+            <ul>
+                Python 
+            </ul>
+        </div>
+     </aside>
+     <div class = "float-child resume">
+    <h1 class ="resumeTitle"> Resume</h1>
+    <h2 class ="resumeTitle">Education</h2>
         <h4>Boston University, Boston, Massachussetts</h4>
             <p>Master of Science in Computer Information Systems, with a concentration in Computer Networks</p>
             <li>Cumulative GPA of 3.75/4.0.</li>
@@ -19,7 +61,7 @@
             <li>Graduated Magna Cum Laude with a cumulative GPA of 3.94/4.0.</li>
             <li>Courses taken include: Database Design and Implementation, Computer Science, Internet Programming, Data Communications, Business Calculus, Business Management, Economics</li>
         
-    <h2>Relevant Job Experience</h2>
+    <h2 class ="resumeTitle">Relevant Job Experience</h2>
         <h4>Boston University, Boston, Massachussetts</h4>
             <h5>Educational Technologies Engineer II, Educational Technology & Innovation</h5>
                 <li>Analyzed issues in Learning Management System and used SQL queries to develop solutions</li>
@@ -55,4 +97,7 @@
                     <li>Installed Traps Antivirus software on 50+ terminals around the hotel</li>
                     <li>Provided both hardware and software technical support to employees in a timely and accurate way </li>
                     <li>Cleaned up MDF/ IDF Infrastructure</li>
+    </div>
+    </div>
+</body>
 </template>

@@ -4,7 +4,7 @@
 
 <script>
 import imageData from '../../data/imgList.js';
-import movingPictures from './components/movingPictures.vue'
+import movingPictures from '../../components/movingPictures.vue'
 
 export default {
   name: 'App',
