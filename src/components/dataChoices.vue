@@ -10,7 +10,7 @@
      <br><br>
      <body>
   <h1>Requests go to the toilet.</h1><h3>After you select submit, you will be taken to the toliet.</h3><h4> Make sure you click back to get back to the website!</h4>
-    <form name ="choicesInput" action="https://ptsv2.com/t/qp7de-1659569758/post">
+    <form name ="choicesInput" action="https://ptsv2.com/t/qp7de-1659569758/post" method="post" onsubmit="validateInput()">
         <section> 
         <br><h3>Please fill out the following information</h3>
         <!-- I added in alerts to the dom and to the page. -->
@@ -53,3 +53,27 @@
  
     </body>
 </template>
+
+<script>
+function validateInput(){
+        let firstNameInput = document.getElementById("firstName").value;
+        let lastNameInput = document.getElementById("lastName").value;
+        
+        if (testInputForAlphaCharacters(firstNameInput) === false) {
+            alert("First Name contains other values besides Alpha characters. Please try again");
+            return false
+        }
+        if (testInputForAlphaCharacters(lastNameInput) === false) {
+            alert("Last Name contains other values besides Alpha characters. Please try again");
+            return false
+        }
+}
+
+function testInputForAlphaCharacters(input){
+    let validLetters = new RegExp('^[A-Za-z]+$')
+    return validLetters.test(input)
+} 
+
+
+
+</script>
