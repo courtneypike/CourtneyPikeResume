@@ -1,0 +1,181 @@
+body {
+    background-color: gainsboro;
+}
+aside {
+    width: 20%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+    height: 100%;
+    font-style: italic;
+    color: white;
+    text-align: left;
+    background-color: rgb(65, 65, 66);
+    position: fixed;
+    overflow-y: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+img{
+  border-radius: 20px;
+}
+video{
+  border-radius: 50px; 
+  overflow: hidden; 
+  border: 10px solid rgb(65, 65, 66);
+}
+  .biographyPic {
+    width: 400px;
+    height: 300px;
+    border-radius: 50%;
+    float: left; 
+    text-align: left;   
+    margin: 0 15px 0 0;
+    display: absolute;
+  }
+  .biographyPicDiv {
+    width: 30%;
+  }
+  .biography {
+   text-align: center;
+
+  }
+  outer-container{
+    display: flex;  
+    flex-direction: row;
+    width: 1500px; 
+  }
+.resumeTitle {
+  background-color: rgb(65, 65, 66);
+  color: white;
+  position: flex;
+}
+  .resume {
+    width: 75%;
+    float: right;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  p {
+    font-size: medium;
+  }
+
+  h5, h1, h2, h3, h4 {
+    padding: 0px;
+  }
+
+
+.navigation {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0; 
+    background: rgb(65, 65, 66);
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+  
+  .navigation a:hover {
+    background: #a1b0c2;
+  }
+  
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navigation a { 
+      text-align: center; 
+      padding: 0px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+nav{
+  width: 100%;
+  position: fixed;
+  top:0px;
+  text-align:center;
+  padding: 0px;
+}
+nav a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#16151b;
+  margin:0 15px;
+  font-size:16px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+nav a:before{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background:#16151b;
+  top:47%;
+  animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+}
+nav a:hover:before{
+  animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+
+}
+@keyframes in{
+  0%{
+    width: 0;
+    left:0;
+    right:auto;
+  }
+  100%{
+    left:0;
+    right:auto;
+    width: 100%;
+  }
+}
+@keyframes out{
+  0%{
+    width:100%;
+    left: auto;
+    right: 0;
+  }
+  100%{
+    width: 0;
+    left: auto;
+    right: 0;
+  }
+}
+@keyframes show{
+  0%{
+    opacity:0;
+    transform:translateY(-10px);
+  }
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+@for $i from 1 through 5 {
+  nav a:nth-child(#{$i}){
+    animation:show .2s #{$i*0.1+1}s ease 1 both;
+  }
+}
