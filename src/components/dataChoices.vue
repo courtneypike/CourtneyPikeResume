@@ -55,24 +55,7 @@
 </template>
 
 <script>
-function validateInput(){
-        let firstNameInput = document.getElementById("firstName").value;
-        let lastNameInput = document.getElementById("lastName").value;
-        
-        if (testInputForAlphaCharacters(firstNameInput) === false) {
-            alert("First Name contains other values besides Alpha characters. Please try again");
-            return false
-        }
-        if (testInputForAlphaCharacters(lastNameInput) === false) {
-            alert("Last Name contains other values besides Alpha characters. Please try again");
-            return false
-        }
-}
-
-function testInputForAlphaCharacters(input){
-    let validLetters = new RegExp('^[A-Za-z]+$')
-    return validLetters.test(input)
-} 
+     
 
 
 
