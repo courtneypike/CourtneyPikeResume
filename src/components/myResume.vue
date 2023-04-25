@@ -6,98 +6,155 @@
         <a href="resume.html">resume</a>
         <a href="piano.html">piano</a>
         <a href="pictures.html">my cat</a>
-             <br><br>
+        <br><br>
      </nav>  
      <body>
-     <div class ="float-container">
-     <aside>
-        <div class = "float-child contact">
-            <h3>Contact</h3>
-            <ul>
-                pikecourtneyj@gmail.com
-            </ul>
-            <ul>
-                617-955-4176
-            </ul>
-            <ul>
-                github.com/courtneypike
-            </ul>
-        </div>
-        <br>
-        <br>
-        <br>
-          <div>
-            <h3>Technologies</h3>
-            <ul>
-                JavaScript (AJAX, Puppeteer, Node.JS)
-            </ul>
-            <ul>
-                PostGresSQL
-            </ul>
-            <ul>
-                MSSQL
-            </ul>
-            <ul>
-                HTML5/CSS
-            </ul>
-              <ul>
-                Sequelize 
-            </ul>
-            <ul>
-                Python 
-            </ul>
-        </div>
-     </aside>
-     <div class = "float-child resume">
-    <h1 class ="resumeTitle"> Resume</h1>
-    <h2 class ="resumeTitle">Education</h2>
-        <h4>Boston University, Boston, Massachussetts</h4>
-            <p>Master of Science in Computer Information Systems, with a concentration in Computer Networks</p>
-            <li>Cumulative GPA of 3.75/4.0.</li>
-            <li>Courses taken include: Information Structures with Python, Business Data Communication and Networks, Information Systems Analysis, IT Strategy and Management, Network Security</li>
+<div id="doc2" class="yui-t7">
+	<div id="inner">
+	
+		<div id="hd">
+			<div class="yui-gc">
+				<div class="yui-u first">
+					<h1>Courtney Pike</h1>
+				</div>
 
-        <h4>University of Nevada, Reno, Reno, Nevada</h4>
-            <p>Bachelor of Science in Business Administration, Information Systems </p>
-            <li>Graduated Magna Cum Laude with a cumulative GPA of 3.94/4.0.</li>
-            <li>Courses taken include: Database Design and Implementation, Computer Science, Internet Programming, Data Communications, Business Calculus, Business Management, Economics</li>
-        
-    <h2 class ="resumeTitle">Relevant Job Experience</h2>
-        <h4>Boston University, Boston, Massachussetts</h4>
-            <h5>Educational Technologies Engineer II, Educational Technology & Innovation</h5>
-                <li>Analyzed issues in Learning Management System and used SQL queries to develop solutions</li>
-                <li>Built multiple HTML front-end applications that used JavaScript and Node.js API functionality to pull from our internal database and Blackboard Learn’s Data Warehouse to display data</li>
-                <li>Was solely responsible for the technical support of 10+ online learning modules</li>
+				<div class="yui-u">
+					<div class="contact-info">
+						<h3><a id="pdf" href="#">Download PDF</a></h3>
+						<h3><a href="mailto:pikecourtneyj@gmail.com">pikecourtneyj@gmail.com</a></h3>
+						<h3>(617)-955-4176</h3>
+					</div><!--// .contact-info -->
+				</div>
+			</div><!--// .yui-gc -->
+		</div><!--// hd -->
 
-            <h5>Help Desk Technician, MET IT </h5>
-                <li>Responsible for giving technical support and assistance, and recording those issues in ticketing system</li>
-                <li>Performed hardware and software troubleshooting through diagnostic techniques and relevant questions</li>
-                <li>Provided accurate information on IT products or services, including Windows, Zoom, and Microsoft products</li>
+		<div id="bd">
+			<div id="yui-main">
+				<div class="yui-b">
 
-            <h5>Classroom Moderator,  IT Help Center</h5>
-                <li>Worked with faculty in live classes, and assist instructors and students with Zoom technology</li>
-                <li>Assisted with connectivity, audio or video, and sharing screens in Zoom</li>
-                <li>Ensured that all students both in class and remote can view the classroom content and can</li>
-        
-        <h4>Bot Watt, Waltham, Massachusetts</h4>
-            <h5>Data Analyst Intern</h5>
-                <li>Designed, implemented and maintained data models that fit business needs using Sequelize ORM</li>
-                <li>Wrote several web scraping programs using Puppeteer, JavaScript, Node.js, and Sequelize ORM to mine data from clean energy data sources on a daily basis </li>
-                <li>Updated company database with accurate information pulled from web scraping</li>
-                <li>Integrated data into the front-end by creating HTML pages that pull from database using Web API routing, React and Express.js</li>
-        
-        <h4>IT Department at Harrahs, Reno, Nevada</h4>
-            <h5>Support Specialist II</h5>
-                <li>Managed and maintained corporate network through diagnosing and troubleshooting</li>
-                <li>Developed and maintained switches and modems in the MDF </li>
-                <li>Was responsible for resolving tech-related incidents and service requests through troubleshooting, and created technical documentation for issues I resolved</li>
-                <li>Was furloughed after the closure of the casino due to Covid-19</li>
-        
-                <h5>Support Specialist I</h5>
-                    <li>Reimaged over 100 PCs to Windows 10 with a customized corporate image </li>
-                    <li>Installed Traps Antivirus software on 50+ terminals around the hotel</li>
-                    <li>Provided both hardware and software technical support to employees in a timely and accurate way </li>
-                    <li>Cleaned up MDF/ IDF Infrastructure</li>
-    </div>
-    </div>
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Profile</h2>
+						</div>
+						<div class="yui-u">
+							<p class="enlarge">
+								Progressively evolve cross-platform ideas before impactful infomediaries. Energistically visualize tactical initiatives before cross-media catalysts for change. 
+							</p>
+						</div>
+					</div><!--// .yui-gf -->
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Skills</h2>
+						</div>
+						<div class="yui-u">
+
+								<div class="talent">
+									<h2>Web Design</h2>
+									<p>Assertively exploit wireless initiatives rather than synergistic core competencies.	</p>
+								</div>
+
+								<div class="talent">
+									<h2>Interface Design</h2>
+									<p>Credibly streamline mission-critical value with multifunctional functionalities.	 </p>
+								</div>
+
+								<div class="talent">
+									<h2>Project Direction</h2>
+									<p>Proven ability to lead and manage a wide variety of design and development projects in team and independent situations.</p>
+								</div>
+						</div>
+					</div><!--// .yui-gf -->
+
+					<div class="yui-gf">
+						<div class="yui-u first">
+							<h2>Technical</h2>
+						</div>
+						<div class="yui-u">
+							<ul class="talent">
+								<li>XHTML</li>
+								<li>CSS</li>
+								<li class="last">Javascript</li>
+							</ul>
+
+							<ul class="talent">
+								<li>Jquery</li>
+								<li>PHP</li>
+								<li class="last">CVS / Subversion</li>
+							</ul>
+
+							<ul class="talent">
+								<li>OS X</li>
+								<li>Windows XP/Vista</li>
+								<li class="last">Linux</li>
+							</ul>
+						</div>
+					</div><!--// .yui-gf-->
+
+					<div class="yui-gf">
+	
+						<div class="yui-u first">
+							<h2>Experience</h2>
+						</div><!--// .yui-u -->
+
+						<div class="yui-u">
+
+							<div class="job">
+								<h2>Facebook</h2>
+								<h3>Senior Interface Designer</h3>
+								<h4>2005-2007</h4>
+								<p>Intrinsicly enable optimal core competencies through corporate relationships. Phosfluorescently implement worldwide vortals and client-focused imperatives. Conveniently initiate virtual paradigms and top-line convergence. </p>
+							</div>
+
+							<div class="job">
+								<h2>Apple Inc.</h2>
+								<h3>Senior Interface Designer</h3>
+								<h4>2005-2007</h4>
+								<p>Progressively reconceptualize multifunctional "outside the box" thinking through inexpensive methods of empowerment. Compellingly morph extensive niche markets with mission-critical ideas. Phosfluorescently deliver bricks-and-clicks strategic theme areas rather than scalable benefits. </p>
+							</div>
+
+							<div class="job">
+								<h2>Microsoft</h2>
+								<h3>Principal and Creative Lead</h3>
+								<h4>2004-2005</h4>
+								<p>Intrinsicly transform flexible manufactured products without excellent intellectual capital. Energistically evisculate orthogonal architectures through covalent action items. Assertively incentivize sticky platforms without synergistic materials. </p>
+							</div>
+
+
+							<div class="job last">
+								<h2>International Business Machines (IBM)</h2>
+								<h3>Lead Web Designer</h3>
+								<h4>2001-2004</h4>
+								<p>Globally re-engineer cross-media schemas through viral methods of empowerment. Proactively grow long-term high-impact human capital and highly efficient innovation. Intrinsicly iterate excellent e-tailers with timely e-markets.</p>
+							</div>
+
+						</div><!--// .yui-u -->
+					</div><!--// .yui-gf -->
+
+
+					<div class="yui-gf last">
+						<div class="yui-u first">
+							<h2>Education</h2>
+						</div>
+						<div class="yui-u">
+							<h2>Indiana University - Bloomington, Indiana</h2>
+							<h3>Dual Major, Economics and English &mdash; <strong>4.0 GPA</strong> </h3>
+						</div>
+					</div><!--// .yui-gf -->
+
+
+				</div><!--// .yui-b -->
+			</div><!--// yui-main -->
+		</div><!--// bd -->
+
+		<div id="ft">
+			<p>Jonathan Doe &mdash; <a href="mailto:name@yourdomain.com">name@yourdomain.com</a> &mdash; (313) - 867-5309</p>
+		</div><!--// footer -->
+
+	</div><!-- // inner -->
+
+
+</div><!--// doc -->
+</div>
 </body>
 </template>
