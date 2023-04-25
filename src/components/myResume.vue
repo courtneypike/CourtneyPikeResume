@@ -8,7 +8,8 @@
         <a href="pictures.html">my cat</a>
         <br><br>
      </nav>  
-     <body>
+
+<body>
 <div id="doc2" class="yui-t7">
 	<div id="inner">
 	
@@ -149,12 +150,11 @@
 
 		<div id="ft">
 			<p>Jonathan Doe &mdash; <a href="mailto:name@yourdomain.com">name@yourdomain.com</a> &mdash; (313) - 867-5309</p>
-		</div><!--// footer -->
+		</div>
 
-	</div><!-- // inner -->
+	</div>
 
 
-</div><!--// doc -->
 </div>
 </body>
 </template>
