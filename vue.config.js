@@ -21,13 +21,6 @@ module.exports = {
       title: 'Pictures',
       chunks: ['chunk-vendors', 'chunk-common', 'pictures']
     },    
-    'choices': {
-      entry: 'src/pages/Choices/main.js',
-      template: 'public/choices.html',
-      filename: 'choices.html',
-      title: 'Choices',
-      chunks: ['chunk-vendors', 'chunk-common', 'choices']
-    },
     'biography': {
       entry: 'src/pages/Biography/main.js',
       template: 'public/biography.html',
