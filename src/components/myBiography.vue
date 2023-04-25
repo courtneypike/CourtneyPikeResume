@@ -2,12 +2,9 @@
      <nav class = "navigation"> 
         <a href="index.html">Home</a>
         <a href="biography.html">biography</a>
-        <a href="choices.html">choices</a>
         <a href="resume.html">resume</a>
         <a href="piano.html">piano</a>
         <a href="pictures.html">my cat</a>
-             <br><br>
-
      </nav> 
      <body>
          <div class ="float-container biographyDiv">
