@@ -14,12 +14,12 @@ module.exports = {
       title: 'Resume',
       chunks: ['chunk-vendors', 'chunk-common', 'resume']
     },
-    'pictures': {
-      entry: 'src/pages/Pictures/main.js',
-      template: 'public/pictures.html',
-      filename: 'pictures.html',
-      title: 'Pictures',
-      chunks: ['chunk-vendors', 'chunk-common', 'pictures']
+    'coverify': {
+      entry: 'src/pages/Coverify/main.js',
+      template: 'public/coverify.html',
+      filename: 'coverify.html',
+      title: 'Coverify',
+      chunks: ['chunk-vendors', 'chunk-common', 'coverify']
     },    
     'biography': {
       entry: 'src/pages/Biography/main.js',

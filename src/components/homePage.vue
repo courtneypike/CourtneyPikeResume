@@ -1,16 +1,16 @@
 <template>
 <container>
-     <nav class = "navigation"> 
+    <nav class = "navigation"> 
         <a href="index.html">Home</a>
         <a href="biography.html">biography</a>
         <a href="resume.html">resume</a>
+        <a href="coverify.html">coverify</a>
         <a href="piano.html">piano</a>
-        <a href="pictures.html">my cat</a>
      </nav> 
-          <br><br>
+    <br><br>
 </container>
 <body>
-<h1>Slideshow of Pictures I Have Taken or Pictures of Me</h1>
+<h1>Home</h1>
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i">
         <img :src="currentImg" />
