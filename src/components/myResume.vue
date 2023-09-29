@@ -1,7 +1,6 @@
 <template>
      <nav class = "navigation"> 
         <a href="index.html">Home</a>
-        <a href="biography.html">biography</a>
         <a href="resume.html">resume</a>
         <a href="coverify.html">coverify</a>
         <a href="piano.html">piano</a>

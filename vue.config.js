@@ -21,13 +21,6 @@ module.exports = {
       title: 'Coverify',
       chunks: ['chunk-vendors', 'chunk-common', 'coverify']
     },    
-    'biography': {
-      entry: 'src/pages/Biography/main.js',
-      template: 'public/biography.html',
-      filename: 'biography.html',
-      title: 'Biography',
-      chunks: ['chunk-vendors', 'chunk-common', 'biography']
-    },
     'piano': {
       entry: 'src/pages/Piano/main.js',
       template: 'public/piano.html',
