@@ -10,7 +10,6 @@
     <br><br>
 </container>
 <body>
-<h1>Home</h1>
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i">
         <img :src="currentImg" />

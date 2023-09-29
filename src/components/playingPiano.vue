@@ -8,60 +8,85 @@
      </nav> 
      <body>
     <h1>Piano</h1>
-
-     <div>
-        <h3>How long have I been playing the piano?</h3>
-        <p>I have been playing the piano for about 7 years now. I get weekly lessons, and have had a wide range of excellent teachers.</p>
-    </div>
-     <div style = "padding-top: 30px">
-        <h3>Examples of some pieces I have learned to play on the piano</h3>
-            <ul style = "width:50%; text-align: center; display: inline-block">
-            <li class = "piano-list">Nocturne No.2 in E-Flat Major, Op. 9 No. 2 by Frederic Chopin</li> 
-            <li class = "piano-list">Premerèie Gynmopedie by Eric Satie</li> 
-            <li class = "piano-list">Clair de Lune, L. 32 by Claude Debussy</li> 
-            <li class = "piano-list">Truman Sleeps by Philip Glass</li> 
-            <li class = "piano-list">Goldberg Variations, BWV 988: Aria by Johann Sebastian Bach</li> 
-            <li class = "piano-list">Nocturne in C-Sharp Minor by Frederic Chopin</li> 
-            </ul>
-    </div>
-
-      <h3 style = "padding-top: 30px">Videos of me playing piano</h3>
-        <h4>Clair de Lune, L. 32 by Claude Debussy</h4> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/n3TEUUR5v4o" 
-                title="YouTube video player" 
-                frameborder="0" allow="accelerometer; 
-                autoplay; clipboard-write; encrypted-media; 
-                gyroscope; picture-in-picture; web-share" allowfullscreen>
-        </iframe>
-
-        <h4  style = "border-top: 1px solid #16151b; padding-top: 30px>Three piece recital: <br>
-            Premerèie Gynmopedie by Eric Satie by Frederic Chopin <br>
-            Nocturne in C-sharp minor by Frederic Chopin<br>
-            Nocturne No.2 in E-Flat Major, Op. 9 No. 2 by Frederic Chopin <br>
-        </h4> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/n3TEUUR5v4o" 
-                title="YouTube video player" 
-                frameborder="0" allow="accelerometer; 
-                autoplay; clipboard-write; encrypted-media; 
-                gyroscope; picture-in-picture; web-share" allowfullscreen>
-        </iframe></h4> 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/j-HKCvhCLI0" 
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-        </iframe>
-
-        <h4 style = "border-top: 1px solid #16151b; padding-top: 30px">Truman Sleeps by Philip Glass</h4> 
-        <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/X7M4D5-EOK0" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; 
-                autoplay; 
-                clipboard-write; 
-                encrypted-media; 
-                gyroscope; 
-                picture-in-picture; 
-                web-share" allowfullscreen>
-        </iframe>
+    <div class="videos">
+      <div class="videos__item">
+        <vue-youtube :src="videoIds[0]" :width="640" :height="360"></vue-youtube>
+      </div>
+      <div class="videos__item">
+        <vue-youtube :src="videoIds[1]" :width="640" :height="360"></vue-youtube>
+      </div>
+      <div class="videos__item">
+        <vue-youtube :src="videoIds[2]" :width="640" :height="360"></vue-youtube>
+      </div>
+  </div>
     </body>
 </template>
+
+<script>
+function getVideoIdFromUrl(url) {
+  // Regular expression to match YouTube video URLs
+const youtubeUrlPattern = /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?|.*[?&]v=)|youtu\.be\/)([^"&?/ ]{11}))/;
+
+  // Attempt to match and extract the video ID
+  const match = url.match(youtubeUrlPattern);
+
+  if (match) {
+    return match[1]; // Return the extracted video ID
+  } else {
+    return null; // Return null if no match is found
+  }
+}
+import VueYoutube from 'vue3-youtube';
+import VueLazyload from 'vue-lazyload';
+
+export default {
+  name: 'App',
+  components: {
+    VueYoutube
+  },  
+  directives: {
+    lazy: VueLazyload.directive, // Add the lazy directive
+  },
+  data() {
+  return {
+    videoIds: [
+      getVideoIdFromUrl('https://www.youtube.com/watch?v=n3TEUUR5v4o'),
+      getVideoIdFromUrl('https://www.youtube.com/watch?v=83HaJtn55b8'),
+      getVideoIdFromUrl('https://www.youtube.com/watch?v=X7M4D5-EOK0'),
+    ],
+  };
+  },
+}
+</script>
+<style>
+/* Add styles for the videos container */
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Add styles for individual video items */
+.videos__item {
+  flex-basis: calc(33.33% - 20px); /* Adjust the width of each video item */
+  margin-bottom: 20px; /* Add margin to create spacing between videos */
+  max-width: 100%; /* Ensure videos don't exceed their container's width */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+/* Style the embedded videos */
+.vue-youtube {
+  width: 100%; /* Ensure videos take up 100% of the container width */
+  height: 0; /* Maintain the aspect ratio for responsive sizing */
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+  position: relative; /* Create a relative positioning context */
+}
+
+.vue-youtube iframe {
+  position: absolute; /* Position the iframe within its container */
+  width: 100%; /* Ensure the iframe takes up 100% of the container width */
+  height: 100%; /* Ensure the iframe takes up 100% of the container height */
+  top: 0;
+  left: 0;
+}
+</style>

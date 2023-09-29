@@ -1,18 +1,19 @@
 <template>
-  <playingPiano/>
+  <div>
+    <playingPiano />
+    <VueYoutube />
+  </div>
 </template>
 
 <script>
-import playingPiano from '../../components/playingPiano.vue'
+import playingPiano from '../../components/playingPiano.vue';
+import VueYoutube from 'vue3-youtube';
 
 export default {
   name: 'App',
   components: {
     playingPiano,
-  },
-  data () {
-    return {
-    };
+    VueYoutube,
   },
 }
 </script>

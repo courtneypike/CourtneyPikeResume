@@ -23,6 +23,14 @@ img{
   width: 49%;
   vertical-align: middle;
 }
+.coverifyPictures{
+  float:left;
+   width: 40%;
+}
+.coverifyDescription{
+  float:left; 
+  width: 60%
+}
 video{
   border-radius: 50px; 
   overflow: hidden; 
@@ -103,27 +111,6 @@ video{
     padding: 20px;
   }
   
-  @media all and (max-width: 800px) {
-    .navigation {
-      justify-content: space-around;
-    }
-  }
-  
-  @media all and (max-width: 600px) {
-    .navigation {
-      flex-flow: column wrap;
-      padding: 0;
-    }
-    .navigation a { 
-      text-align: center; 
-      padding: 0px;
-      border-top: 1px solid rgba(255, 255, 255,0.3); 
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-    }
-    .navigation li:last-of-type a {
-      border-bottom: none;
-    }
-  }
 nav{
   width: 100%;
   position: fixed;
@@ -194,5 +181,45 @@ nav a:hover:before{
 @for $i from 1 through 5 {
   nav a:nth-child(#{$i}){
     animation:show .2s #{$i*0.1+1}s ease 1 both;
+  }
+}
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 0px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+  .biographyPic{
+  width: 200px;
+  height: 150px;
+  }
+  body{
+    padding-top: 50px;
+  }
+  .coverify{
+    width: 100%;
+    float: none;
+  }
+  .coverifyPictures{
+    width: 100%;
+    float: none;
+  }
+  .coverifyDescription{
+    width: 100%;
+    float: none;
   }
 }
