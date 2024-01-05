@@ -6,7 +6,6 @@
         <a href="piano.html">piano</a>
      </nav> 
      <body>
-    <h1>Piano</h1>
      <div class="videos">
         <div class="videos__item">
           <vue-youtube :src="videoIds[0]" :width="640" :height="360" :key="videoIds[0]"></vue-youtube>
@@ -91,7 +90,7 @@ data() {
 <style>
 /* Add styles for the videos container */
 .videos {
-  display: flex;
+  display: center;
   flex-wrap: wrap;
 }
 </style>
