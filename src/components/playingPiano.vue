@@ -90,7 +90,10 @@ data() {
 <style>
 /* Add styles for the videos container */
 .videos {
-  display: center;
-  flex-wrap: wrap;
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 </style>

@@ -9,7 +9,7 @@
     <br><br>
 </container>
       <p style ="padding-right: 100px;padding-left: 100px;">
-         Hello! <br> My name is Courtney Pike. <br> I am a Master of Science graduate in Computer Information Systems, with a strong professional background in full-stack development, specializing in JavaScript, Node.js, and SQL. With over 5 years of work experience spanning Technologies Engineering, Web Architecture, Data Analysis, and IT Operations, I am committed to advancing the achievements of projects and teams through my expertise in full-stack development.<br>
+         Hello! <br> My name is Courtney Pike. <br> I am a Master of Science graduate in Computer Information Systems, with a professional background in full-stack development, specializing in JavaScript, Node.js, and SQL. With over 5 years of work experience spanning Technologies Engineering, Web Architecture, Data Analysis, and IT Operations, I am committed to advancing the achievements of projects and teams through my expertise in full-stack development.<br>
  <br><br>
         </p>
 <body>
